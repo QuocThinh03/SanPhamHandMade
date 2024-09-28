@@ -1,0 +1,73 @@
+﻿@page
+@model QuocThinh.Pages.QLSanPham.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Pages/Shared/_LayoutAdmin.cshtml";
+}
+
+<h1>Quản lý sản phẩm</h1>
+
+<p>
+    <a asp-page="Create" class="btn btn-primary">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.SanPham[0].Ten)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SanPham[0].Anh)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SanPham[0].Gia)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SanPham[0].SoLuong)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SanPham[0].MauSac)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SanPham[0].ThongSo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SanPham[0].IDLoai)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.SanPham) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ten)
+            </td>
+            <td>
+                <img src="~/client/img/sanpham/@Url.Content(item.Anh)" alt="Ảnh" style="height: 150px; width: 150px;" />
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Gia)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SoLuong)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MauSac)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ThongSo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IDLoai)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.ID">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.ID">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.ID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

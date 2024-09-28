@@ -1,0 +1,183 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = GiaBao
+build_property.RootNamespace = GiaBao
+build_property.ProjectDir = C:\Users\ASUS\Desktop\new\GiaBao\GiaBao\GiaBao\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\ASUS\Desktop\new\GiaBao\GiaBao\GiaBao
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/ASUS/Desktop/new/GiaBao/GiaBao/GiaBao/Pages/CallBack.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FsbEJhY2suY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/Desktop/new/GiaBao/GiaBao/GiaBao/Pages/ChiTietSanPham.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2hpVGlldFNhblBoYW0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/Desktop/new/GiaBao/GiaBao/GiaBao/Pages/ChiTietTinTuc.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2hpVGlldFRpblR1Yy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/Desktop/new/GiaBao/GiaBao/GiaBao/Pages/DanhMuc.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGFuaE11Yy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/Desktop/new/GiaBao/GiaBao/GiaBao/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/Desktop/new/GiaBao/GiaBao/GiaBao/Pages/GioHang.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2lvSGFuZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/Desktop/new/GiaBao/GiaBao/GiaBao/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/Desktop/new/GiaBao/GiaBao/GiaBao/Pages/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/Desktop/new/GiaBao/GiaBao/GiaBao/Pages/Main.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/Desktop/new/GiaBao/GiaBao/GiaBao/Pages/QLDonHang/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUUxEb25IYW5nXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/Desktop/new/GiaBao/GiaBao/GiaBao/Pages/QLDonHang/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUUxEb25IYW5nXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/Desktop/new/GiaBao/GiaBao/GiaBao/Pages/QLLoai/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUUxMb2FpXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/Desktop/new/GiaBao/GiaBao/GiaBao/Pages/QLLoai/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUUxMb2FpXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/Desktop/new/GiaBao/GiaBao/GiaBao/Pages/QLLoai/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUUxMb2FpXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/Desktop/new/GiaBao/GiaBao/GiaBao/Pages/QLLoai/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUUxMb2FpXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/Desktop/new/GiaBao/GiaBao/GiaBao/Pages/QLLoai/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUUxMb2FpXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/Desktop/new/GiaBao/GiaBao/GiaBao/Pages/QLNguoiDung/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUUxOZ3VvaUR1bmdcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/Desktop/new/GiaBao/GiaBao/GiaBao/Pages/QLNguoiDung/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUUxOZ3VvaUR1bmdcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/Desktop/new/GiaBao/GiaBao/GiaBao/Pages/QLNguoiDung/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUUxOZ3VvaUR1bmdcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/Desktop/new/GiaBao/GiaBao/GiaBao/Pages/QLNguoiDung/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUUxOZ3VvaUR1bmdcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/Desktop/new/GiaBao/GiaBao/GiaBao/Pages/QLNguoiDung/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUUxOZ3VvaUR1bmdcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/Desktop/new/GiaBao/GiaBao/GiaBao/Pages/QLSanPham/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUUxTYW5QaGFtXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/Desktop/new/GiaBao/GiaBao/GiaBao/Pages/QLSanPham/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUUxTYW5QaGFtXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/Desktop/new/GiaBao/GiaBao/GiaBao/Pages/QLSanPham/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUUxTYW5QaGFtXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/Desktop/new/GiaBao/GiaBao/GiaBao/Pages/QLSanPham/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUUxTYW5QaGFtXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/Desktop/new/GiaBao/GiaBao/GiaBao/Pages/QLSanPham/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUUxTYW5QaGFtXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/Desktop/new/GiaBao/GiaBao/GiaBao/Pages/QLTinTuc/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUUxUaW5UdWNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/Desktop/new/GiaBao/GiaBao/GiaBao/Pages/QLTinTuc/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUUxUaW5UdWNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/Desktop/new/GiaBao/GiaBao/GiaBao/Pages/QLTinTuc/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUUxUaW5UdWNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/Desktop/new/GiaBao/GiaBao/GiaBao/Pages/QLTinTuc/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUUxUaW5UdWNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/Desktop/new/GiaBao/GiaBao/GiaBao/Pages/QLTinTuc/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUUxUaW5UdWNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/Desktop/new/GiaBao/GiaBao/GiaBao/Pages/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVnaXN0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/Desktop/new/GiaBao/GiaBao/GiaBao/Pages/Shared/_Footer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9Gb290ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/Desktop/new/GiaBao/GiaBao/GiaBao/Pages/Shared/_Header.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9IZWFkZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/Desktop/new/GiaBao/GiaBao/GiaBao/Pages/Shared/_LayoutAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXRBZG1pbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/Desktop/new/GiaBao/GiaBao/GiaBao/Pages/Shared/_Slidebar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9TbGlkZWJhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/Desktop/new/GiaBao/GiaBao/GiaBao/Pages/ThanhToan.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGhhbmhUb2FuLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/Desktop/new/GiaBao/GiaBao/GiaBao/Pages/TinTuc.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGluVHVjLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/Desktop/new/GiaBao/GiaBao/GiaBao/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/Desktop/new/GiaBao/GiaBao/GiaBao/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/Desktop/new/GiaBao/GiaBao/GiaBao/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-ce77htx67q

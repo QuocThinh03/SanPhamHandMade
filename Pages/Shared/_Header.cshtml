@@ -1,0 +1,191 @@
+﻿@using QuocThinh.Models;
+@using Microsoft.AspNetCore.Http;
+@using Newtonsoft.Json
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+@inject ApplicationDbContext _dbContext
+
+@{
+    var httpContext = HttpContextAccessor.HttpContext;
+    var Ten = "";
+    int SoLuong = 0;
+    int Tong = 0;
+
+    var sessionCart = httpContext.Session.GetString("Cart");
+    if (sessionCart != null)
+    {
+        var cartItems = JsonConvert.DeserializeObject<List<Cart>>(sessionCart);
+        SoLuong = cartItems.Sum(item => item.SoLuong);
+        Tong = Convert.ToInt32(cartItems.Sum(item => item.Gia * item.SoLuong));
+    }
+
+    List<Loai> ListLoai;
+    ListLoai = _dbContext.Loai.ToList();
+}
+
+<!-- header area start -->
+<header>
+
+    <!-- header top start -->
+    <div class="header-top-area bg-gray text-center text-md-left">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-5">
+                    <div class="header-call-action">
+                        <a href="#">
+                            <i class="fa fa-envelope"></i>
+                            hmlen867@gmail.com
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-phone"></i>
+                            0888.585.867
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-7">
+                    <div class="header-top-right float-md-right float-none">
+                        <nav>
+                            <ul>
+                                @if (httpContext.Session.GetInt32("UserID") != null)
+                                {
+                                    var userId = httpContext.Session.GetInt32("UserID");
+
+                                    if (userId != null)
+                                    {
+                                        var user = _dbContext.NguoiDung.FindAsync(userId).Result;
+                                        if (user != null)
+                                        {
+                                            Ten = user.Ten;
+                                        }
+                                    }
+                                    if (Ten != "")
+                                    {
+                                        <li>
+                                            <a>Xin chào, @Ten</a>
+                                        </li>
+                                        <li>
+                                            <a asp-area="" asp-page="/Login">Đăng xuất</a>
+                                        </li>
+                                    }
+                                }
+                                else
+                                {
+                                    <li>
+                                        <a asp-area="" asp-page="/Login">Đăng nhập</a>
+                                    </li>                                 
+                                }
+                                <li>
+                                    <a asp-area="" asp-page="/GioHang">Giỏ hàng</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- header top end -->
+    <!-- header middle start -->
+    <div class="header-middle-area pt-20 pb-20">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-3">
+                    <div class="brand-logo">
+                        <a asp-area="" asp-page="/Index">
+                            <img src="~/Client/img/logo/Untitled.png" alt="brand logo">
+                        </a>
+                    </div>
+                </div> <!-- end logo area -->
+                <div class="col-lg-9">
+                    <div class="header-middle-right">
+                        <div class="header-middle-shipping mb-20">
+                            <div class="single-block-shipping">
+                                <div class="shipping-icon">
+                                    <i class="fa fa-clock-o"></i>
+                                </div>
+                                <div class="shipping-content">
+                                    <h5>THỜI GIAN</h5>
+                                    <span>Mon - Sun: 8.00 - 20.00</span>
+                                </div>
+                            </div> <!-- end single shipping -->
+                            <div class="single-block-shipping">
+                                <div class="shipping-icon">
+                                    <i class="fa fa-truck"></i>
+                                </div>
+                                <div class="shipping-content">
+                                    <h5>GIAO HÀNG</h5>
+                                    <span>Giao hàng nhanh chóng</span>
+                                </div>
+                            </div> <!-- end single shipping -->
+                            <div class="single-block-shipping">
+                                <div class="shipping-icon">
+                                    <i class="fa fa-money"></i>
+                                </div>
+                                <div class="shipping-content">
+                                    <h5>HOÀN TIỀN 100%</h5>
+                                    <span>Trong vòng 2 tuần sau khi giao hàng</span>
+                                </div>
+                            </div> <!-- end single shipping -->
+                        </div>
+                        <div class="header-middle-block">
+                            <div class="header-middle-searchbox">
+                                <input type="text" placeholder="Bạn muốn tìm gì ? ...">
+                                <button class="search-btn"><i class="fa fa-search"></i></button>
+                            </div>
+                            <a hasp-area="" asp-page="/GioHang" class="header-mini-cart">
+                                <div class="mini-cart-btn">
+                                    <i class="fa fa-shopping-cart"></i>
+                                    <span class="cart-notification">@SoLuong</span>
+                                </div>
+                                <div class="cart-total-price" style="font-size: 14px">
+                                    <span>@Tong.ToString("N0") ₫</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- header middle end -->
+    <!-- main menu area start -->
+    <div class="main-header-wrapper bdr-bottom1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="main-header-inner">
+                        <div class="category-toggle-wrap">
+                            <div class="category-toggle">
+                                Danh mục sản phẩm
+                                <div class="cat-icon">
+                                    <i class="fa fa-angle-down"></i>
+                                </div>
+                            </div>
+                            <nav class="category-menu @(Model.NavCssClass)">
+                                <ul>
+                                    @foreach (var loai in ListLoai)
+                                    {
+                                        <li><a asp-area="" asp-page="/DanhMuc" asp-route-id="@loai.ID"><i></i> @loai.Ten </a></li>
+                                    }
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="main-menu">
+                            <nav id="mobile-menu">
+                                <ul>
+                                    <li class="active"><a asp-area="" asp-page="/Index"><i class="fa fa-home"></i> Trang chủ </a></li>
+                                    <li class="static"><a asp-area="" asp-page="/GioHang"> Giỏ hàng </a>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 d-block d-lg-none">
+                    <div class="mobile-menu"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- main menu area end -->
+
+</header>
+<!-- header area end -->

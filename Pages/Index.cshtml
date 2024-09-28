@@ -1,0 +1,109 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<!-- hero slider start -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="slider-wrapper-area">
+                        <div class="hero-slider-active hero__1 slick-dot-style hero-dot">
+                            <div class="single-slider" style="background-image: url(/Client/img/slider/banner3.png);">
+                                <div class="container p-0">
+                                    <div class="slider-main-content">
+                                        <div class="slider-content-img">
+                                            <img src="~/client/img/slider/slider11_lable1.png" alt="">
+                                            <img src="~/client/img/slider/slider11_lable2.png" alt="">
+                                        </div>
+                                        <div class="slider-text">
+                                            <div class="slider-label">
+                                                <img src="~/Client/img/slider/khanco.png" alt="">
+                                            </div>
+                                            <h1>Khăn Cổ Lượn Sóng</h1>
+                                            <p>Sản phẩm thời trang sắp ra mắt!!!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-slider" style="background-image: url(/Client/img/slider/banner3.png);">
+                                <div class="container p-0">
+                                    <div class="slider-main-content">
+                                        <div class="slider-content-img">
+                                            <img src="~/client/img/slider/slider11_lable1.png" alt="">
+                                            <img src="~/client/img/slider/slider11_lable2.png" alt="">
+                                        </div>
+                                        <div class="slider-text">
+                                            <div class="slider-label">
+                                        <img src="~/Client/img/slider/khungtrangtri.png" alt="">
+                                            </div>
+                                            <h1>Khung Trang Trí</h1>
+                                            <p>Khung tranh cô dâu chú rễ sắp ra mắt 
+                                                !!!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- hero slider end -->
+
+        <!-- new product start -->
+        <div class="brand-area pt-28 pb-30">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section-title mb-30">
+                            <div class="title-icon">
+                                <i class="fa fa-flash"></i>
+                            </div>
+                            <h3>Sản phẩm mới</h3>
+                        </div> <!-- section title end -->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="brand-active slick-padding slick-arrow-style">
+                            @foreach (var sanPham in Model.ListSanPham)
+                            {
+                                <!-- product single item start -->
+                                <div class="product-item fix">
+                                    <div class="product-thumb">
+                                        <a asp-area="" asp-page="/ChiTietSanPham" asp-route-id="@sanPham.ID">
+                                            <img src="~/client/img/sanpham/@sanPham.Anh" class="img-pri" alt="">
+                                        </a>
+                                        <div class="product-label ml-160">
+                                            <span>mới</span>
+                                        </div>
+                                        <form id="addToCartForm-@sanPham.ID" method="post" asp-page-handler="AddToCart" asp-route-id="@sanPham.ID">
+                                            <div class="product-action-link mt-170">
+                                                <a href="#" onclick="submitForm('@sanPham.ID'); return false;"><i class="fa fa-shopping-cart"></i></a>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="product-content text-center border-top">
+                                        <a asp-area="" asp-page="/ChiTietSanPham" asp-route-id="@sanPham.ID" class="product-title text-dark font-weight-bold">@sanPham.Ten </a>
+                                        <div class="pricebox">
+                                            <span class="price text-danger">Giá: @sanPham.Gia.ToString("N0") đ</span><br/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- product single item end -->
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- new product end -->
+
+<script>
+    function submitForm(productId) {
+        var formId = "addToCartForm-" + productId;
+        document.getElementById(formId).submit();
+    }
+</script>

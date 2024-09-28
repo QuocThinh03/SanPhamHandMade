@@ -1,0 +1,160 @@
+﻿@page
+@model QuocThinh.Pages.DanhMucModel
+@{
+}
+
+<!-- breadcrumb area start -->
+<div class="breadcrumb-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="breadcrumb-wrap">
+                    <nav aria-label="breadcrumb">
+                        <ul class="breadcrumb">
+                            <li class="breadcrumb-item"><a asp-area="" asp-page="/Index">Trang chủ</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Danh mục sản phẩm</li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- breadcrumb area end -->
+<!-- page wrapper start -->
+<div class="page-main-wrapper">
+    <div class="container">
+        <div class="row">
+            <!-- sidebar start -->
+            <div class="col-lg-3 order-2 order-lg-1">
+                <div class="shop-sidebar-wrap mt-md-28 mt-sm-28">
+
+                    <!-- sidebar categorie start -->
+                    <div class="sidebar-widget mb-30">
+                        <div class="sidebar-category">
+                            <ul>
+                                <li class="title"><i class="fa fa-bars"></i> Loại sản phẩm</li>
+                                @foreach (var loai in Model.ListLoai)
+                                {
+                                    <li><a asp-area="" asp-page="/DanhMuc" asp-route-id="@loai.ID">@loai.Ten</a><span></span></li>
+                                }
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- sidebar categorie start -->   
+                    
+                </div>
+            </div>
+            <!-- sidebar end -->
+            <!-- product main wrap start -->
+            <div class="col-lg-9 order-1 order-lg-2">
+                <!-- product view wrapper area start -->
+                <div class="shop-product-wrapper">
+                    <!-- shop product top wrap start -->
+                    <div class="shop-top-bar">
+                        <div class="row">
+                            <div class="col-lg-7 col-md-6">
+                                <div class="top-bar-left">
+                                    <div class="product-view-mode mr-70 mr-sm-0">
+                                        <a class="active" href="#" data-target="grid"><i class="fa fa-th"></i></a>
+                                        <a href="#" data-target="list"><i class="fa fa-list"></i></a>
+                                    </div>
+                                    <div class="product-amount">
+                                        <p></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-md-6">
+                                <div class="top-bar-right">
+                                    <div class="product-short">
+                                        <p>Sắp xếp: </p>
+                                        <select class="nice-select" name="sortby">
+                                            <option value="trending">Ngày thêm</option>
+                                            <option value="sales">Bán chạy</option>
+                                            <option value="sales">Giảm giá</option>
+                                            <option value="sales">Ngẫu nhiên</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- shop product top wrap start -->
+                    <!-- product item start -->
+                    <div class="shop-product-wrap grid row">
+
+                        @foreach (var sanPham in Model.ListSanPham)
+                        {
+                            <div class="col-lg-3 col-md-4 col-sm-6">
+                                <!-- product single grid item start -->
+                                <div class="product-item fix mb-30">
+
+                                    <!-- product single item start -->
+                                    <div class="product-item fix">
+                                        <div class="product-thumb">
+                                            <a asp-area="" asp-page="/ChiTietSanPham" asp-route-id="@sanPham.ID">
+                                                <img src="~/client/img/sanpham/@sanPham.Anh" class="img-pri" alt="">
+                                            </a>
+                                            <div class="product-label ml-140">
+                                                <span>hot</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-content text-center border-top">
+                                            <a asp-area="" asp-page="/ChiTietSanPham" asp-route-id="@sanPham.ID" class="product-title text-dark font-weight-bold">@sanPham.Ten </a>
+                                            <div class="pricebox">
+                                                <span class="price text-danger">Giá: @sanPham.Gia.ToString("N0") đ</span><br />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- product single grid item end -->
+                                <!-- product single list item start -->
+                                <div class="product-list-item mb-30">
+                                    <div class="product-thumb">
+                                        <a asp-area="" asp-page="/ChiTietSanPham" asp-route-id="@sanPham.ID">
+                                            <img src="~/client/img/sanpham/@sanPham.Anh" class="img-pri" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="product-list-content">
+                                        <h3><a asp-area="" asp-page="/ChiTietSanPham" asp-route-id="@sanPham.ID">@sanPham.Ten</a></h3>
+                                        <div class="pricebox">
+                                            <span class="regular-price">@sanPham.Gia.ToString("N0") đ</span>
+                                        </div>
+                                        <p>
+                                            @Html.Raw(sanPham.MoTa.Substring(0, Math.Min(sanPham.MoTa.Length, 100))) @if (sanPham.MoTa.Length > 100)
+                                            {
+                                                <text>...</text>
+                                            }
+                                        </p>
+                                        <div class="product-list-action-link">
+                                            <a asp-area="" asp-page="/ChiTietSanPham" asp-route-id="@sanPham.ID" data-toggle="tooltip" data-placement="top" title="Chi tiết sản phẩm"><i class="fa fa-search"></i></a>
+                                            <a href="#" data-toggle="tooltip" data-placement="top" title="Sản phẩm cùng loại"><i class="fa fa-bars"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- product single list item start --!>
+                            </div> <!-- product single column end -->
+                        }
+
+                    </div>
+                    <!-- product item end -->
+                </div>
+                <!-- product view wrapper area end -->
+
+                
+
+            </div>
+            <!-- product main wrap end -->
+
+        </div>
+    </div>
+</div>
+<!-- page wrapper end -->
+
+<script>
+    function submitForm(productId) {
+        var formId = "addToCartForm-" + productId;
+        document.getElementById(formId).submit();
+    }
+</script>

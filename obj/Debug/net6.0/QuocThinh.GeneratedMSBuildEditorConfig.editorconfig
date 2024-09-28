@@ -1,0 +1,155 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = QuocThinh
+build_property.RootNamespace = QuocThinh
+build_property.ProjectDir = E:\THINHX\QuocThinh\WebsiteHandmadeLen\Source\QuocThinh\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = E:\THINHX\QuocThinh\WebsiteHandmadeLen\Source\QuocThinh
+build_property._RazorSourceGeneratorDebug = 
+
+[E:/THINHX/QuocThinh/WebsiteHandmadeLen/Source/QuocThinh/Pages/CallBack.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FsbEJhY2suY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/THINHX/QuocThinh/WebsiteHandmadeLen/Source/QuocThinh/Pages/ChiTietSanPham.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2hpVGlldFNhblBoYW0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/THINHX/QuocThinh/WebsiteHandmadeLen/Source/QuocThinh/Pages/DanhMuc.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGFuaE11Yy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/THINHX/QuocThinh/WebsiteHandmadeLen/Source/QuocThinh/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/THINHX/QuocThinh/WebsiteHandmadeLen/Source/QuocThinh/Pages/GioHang.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2lvSGFuZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/THINHX/QuocThinh/WebsiteHandmadeLen/Source/QuocThinh/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/THINHX/QuocThinh/WebsiteHandmadeLen/Source/QuocThinh/Pages/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/THINHX/QuocThinh/WebsiteHandmadeLen/Source/QuocThinh/Pages/Main.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/THINHX/QuocThinh/WebsiteHandmadeLen/Source/QuocThinh/Pages/QLDonHang/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUUxEb25IYW5nXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/THINHX/QuocThinh/WebsiteHandmadeLen/Source/QuocThinh/Pages/QLDonHang/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUUxEb25IYW5nXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/THINHX/QuocThinh/WebsiteHandmadeLen/Source/QuocThinh/Pages/QLLoai/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUUxMb2FpXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/THINHX/QuocThinh/WebsiteHandmadeLen/Source/QuocThinh/Pages/QLLoai/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUUxMb2FpXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/THINHX/QuocThinh/WebsiteHandmadeLen/Source/QuocThinh/Pages/QLLoai/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUUxMb2FpXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/THINHX/QuocThinh/WebsiteHandmadeLen/Source/QuocThinh/Pages/QLLoai/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUUxMb2FpXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/THINHX/QuocThinh/WebsiteHandmadeLen/Source/QuocThinh/Pages/QLLoai/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUUxMb2FpXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/THINHX/QuocThinh/WebsiteHandmadeLen/Source/QuocThinh/Pages/QLNguoiDung/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUUxOZ3VvaUR1bmdcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/THINHX/QuocThinh/WebsiteHandmadeLen/Source/QuocThinh/Pages/QLNguoiDung/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUUxOZ3VvaUR1bmdcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/THINHX/QuocThinh/WebsiteHandmadeLen/Source/QuocThinh/Pages/QLNguoiDung/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUUxOZ3VvaUR1bmdcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/THINHX/QuocThinh/WebsiteHandmadeLen/Source/QuocThinh/Pages/QLNguoiDung/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUUxOZ3VvaUR1bmdcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/THINHX/QuocThinh/WebsiteHandmadeLen/Source/QuocThinh/Pages/QLNguoiDung/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUUxOZ3VvaUR1bmdcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/THINHX/QuocThinh/WebsiteHandmadeLen/Source/QuocThinh/Pages/QLSanPham/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUUxTYW5QaGFtXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/THINHX/QuocThinh/WebsiteHandmadeLen/Source/QuocThinh/Pages/QLSanPham/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUUxTYW5QaGFtXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/THINHX/QuocThinh/WebsiteHandmadeLen/Source/QuocThinh/Pages/QLSanPham/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUUxTYW5QaGFtXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/THINHX/QuocThinh/WebsiteHandmadeLen/Source/QuocThinh/Pages/QLSanPham/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUUxTYW5QaGFtXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/THINHX/QuocThinh/WebsiteHandmadeLen/Source/QuocThinh/Pages/QLSanPham/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUUxTYW5QaGFtXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/THINHX/QuocThinh/WebsiteHandmadeLen/Source/QuocThinh/Pages/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVnaXN0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/THINHX/QuocThinh/WebsiteHandmadeLen/Source/QuocThinh/Pages/Shared/_Footer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9Gb290ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/THINHX/QuocThinh/WebsiteHandmadeLen/Source/QuocThinh/Pages/Shared/_Header.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9IZWFkZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/THINHX/QuocThinh/WebsiteHandmadeLen/Source/QuocThinh/Pages/Shared/_LayoutAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXRBZG1pbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/THINHX/QuocThinh/WebsiteHandmadeLen/Source/QuocThinh/Pages/Shared/_Slidebar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9TbGlkZWJhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/THINHX/QuocThinh/WebsiteHandmadeLen/Source/QuocThinh/Pages/ThanhToan.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGhhbmhUb2FuLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/THINHX/QuocThinh/WebsiteHandmadeLen/Source/QuocThinh/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/THINHX/QuocThinh/WebsiteHandmadeLen/Source/QuocThinh/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/THINHX/QuocThinh/WebsiteHandmadeLen/Source/QuocThinh/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-zqiz6gxvgg

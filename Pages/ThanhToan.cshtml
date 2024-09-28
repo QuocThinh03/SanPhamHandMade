@@ -1,0 +1,118 @@
+﻿@page
+@model QuocThinh.Pages.ThanhToanModel
+@{
+}
+
+<!-- breadcrumb area start -->
+        <div class="breadcrumb-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="breadcrumb-wrap">
+                            <nav aria-label="breadcrumb">
+                                <ul class="breadcrumb">
+                                    <li class="breadcrumb-item"><a asp-area="" asp-page="/Index">Trang chủ</a></li>
+                                    <li class="breadcrumb-item"><a asp-area="" asp-page="/GioHang">Giỏ hàng</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Thanh toán</li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-- breadcrumb area end -->
+
+<!-- checkout main wrapper start -->
+<div class="checkout-page-wrapper">
+    <div class="container">
+
+        <form method="post">
+            <div class="row">
+                <!-- Checkout Billing Details -->
+                <div class="col-lg-6">
+                    <div class="checkout-billing-details-wrap">
+                        <h2>Thông tin khách hàng</h2>
+                        <div class="billing-form-wrap">
+                            <div class="single-input-item">
+                                <label for="ten">Tài khoản</label>
+                                <input type="ten" id="ten" value="@Model.NguoiDung.TaiKhoan" readonly />
+                            </div>
+
+                            <div class="single-input-item">
+                                <label for="diachi" class="required">Tên</label>
+                                <input id="diachi" type="text" name="Ten" value="@Model.NguoiDung.Ten" asp-for="Input.Ten" required />
+                            </div>
+
+                            <div class="single-input-item">
+                                <label for="sdt" class="required">Địa chỉ</label>
+                                <input id="sdt" type="text" name="DiaChi" value="@Model.NguoiDung.DiaChi" asp-for="Input.DiaChi" required />
+                            </div>
+
+                            <div class="single-input-item">
+                                <label for="ghichu" class="required mb-20">Phương thức thanh toán</label>
+                                <div class="single-payment-method show">
+                                    <div class="payment-method-name">
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="cashon" name="paymentmethod" value="cash" class="custom-control-input" checked />
+                                            <label class="custom-control-label" for="cashon">Thanh toán khi giao hàng</label>
+                                        </div>
+                                    </div>
+                                    <div class="payment-method-details" data-method="cash">
+                                        <p>Thanh toán bằng tiền mặt khi giao hàng.</p>
+                                    </div>
+                                </div>                       
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Order Summary Details -->
+                <div class="col-lg-6">
+                    <div class="order-summary-details mt-md-26 mt-sm-26">
+                        <h2>Chi tiết đơn hàng</h2>
+                        <div class="order-summary-content mb-sm-4">
+                            <!-- Order Summary Table -->
+                            <div class="order-summary-table table-responsive text-center">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>Tên sản phẩm</th>
+                                            <th>Tổng tiền</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @foreach (var item in Model.CartItems)
+                                        {
+                                            <tr>
+                                                <td><a href="#">@item.Ten <strong> × @item.SoLuong</strong></a></td>
+                                                <td>@item.Gia.ToString("N0") đ</td>
+                                            </tr>
+                                        }
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td>Số lượng</td>
+                                            <td><strong>@Model.SoLuong</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Tổng hoá đơn</td>
+                                            <td><strong>@Model.TongTien.ToString("N0") đ</strong></td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                            <!-- Order Payment Method -->
+                            <div class="order-payment-method">
+                                <div class="summary-footer-area">
+                                    <button type="submit" class="check-btn sqr-btn">Xác nhận thanh toán</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<!-- checkout main wrapper end -->

@@ -1,0 +1,175 @@
+﻿@page
+@model QuocThinh.Pages.ChiTietSanPhamModel
+@{
+}
+
+<!-- breadcrumb area start -->
+<div class="breadcrumb-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="breadcrumb-wrap">
+                    <nav aria-label="breadcrumb">
+                        <ul class="breadcrumb">
+                            <li class="breadcrumb-item"><a asp-area="" asp-page="/Index">Trang chủ</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Chi tiết sản phẩm</li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- breadcrumb area end -->
+
+<!-- product details wrapper start -->
+<div class="product-details-wrapper">
+    <div class="container">
+        <div class="row">
+            @if (Model.SanPham != null)
+            {
+                <div class="col-lg-9">
+                    <!-- product details inner end -->
+                    <div class="product-details-inner">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="product-large-slider mb-20 slick-arrow-style_2">
+                                    <div class="pro-large-img img-zoom" id="img1">
+                                        <img src="~/client/img/sanpham/@Model.SanPham.Anh" alt="" >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="product-details-des mt-md-34 mt-sm-34">
+                                    <h3><a href="product-details.html">@Model.SanPham.Ten</a></h3>
+                                    <div class="availability mt-10">
+                                        <h5>Số lượng trong kho:</h5>
+                                        <span>@Model.SanPham.SoLuong sản phẩm</span>
+                                    </div>
+                                    <div class="pricebox">
+                                        <span class="regular-price">Giá: @Model.SanPham.Gia.ToString("N0") đ</span>
+                                    </div>
+                                    <p>Hàng chính sách mới 100%</p>
+                                    <p>Giao hàng trên toàn quốc</p>
+                                    <p>Bảo hành uy tín</p>
+                                    <p>Màu sắc: @Model.SanPham.MauSac</p>
+                                    <p>Thông số: @Model.SanPham.ThongSo</p>
+                                    <div class="quantity-cart-box d-flex align-items-center">                                 
+                                        <form id="addToCartForm" method="post" asp-page-handler="AddToCart" asp-route-id="@Model.SanPham.ID">
+                                            <div class="quantity">
+                                                <input type="number" id="quantityInput" name="quantity" value="1" min="1" max="@Model.SanPham.SoLuong">
+                                                <button class="buy-btn btn-danger" type="submit">Mua hàng<i class="fa fa-shopping-cart"></i></button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="share-icon mt-20">
+                                        <a class="facebook" href="#"><i class="fa fa-facebook"></i>like</a>
+                                        <a class="twitter" href="#"><i class="fa fa-twitter"></i>tweet</a>
+                                        <a class="pinterest" href="#"><i class="fa fa-pinterest"></i>save</a>
+                                        <a class="google" href="#"><i class="fa fa-google-plus"></i>share</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- product details inner end -->
+                    <!-- product details reviews start -->
+                    <div class="product-details-reviews mt-34">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="product-review-info">
+                                    <ul class="nav review-tab">
+                                        <li>
+                                            <a class="active" data-toggle="tab" href="#tab_one">Mô tả</a>
+                                        </li>
+                                        <li>
+                                            <a data-toggle="tab" href="#tab_two">Đánh giá</a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content reviews-tab">
+                                        <div class="tab-pane fade show active" id="tab_one">
+                                            <div class="tab-one">
+                                                <p>@Model.SanPham.MoTa</p>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="tab_two">
+                                            <form action="#" class="review-form">
+                                                <h5>1 review for Simple product 12</h5>
+                                                <div class="total-reviews">
+                                                    <div class="rev-avatar">
+                                                        <img src="assets/img/about/avatar.jpg" alt="">
+                                                    </div>
+                                                    <div class="review-box">
+                                                        <div class="ratings">
+                                                            <span class="good"><i class="fa fa-star"></i></span>
+                                                            <span class="good"><i class="fa fa-star"></i></span>
+                                                            <span class="good"><i class="fa fa-star"></i></span>
+                                                            <span class="good"><i class="fa fa-star"></i></span>
+                                                            <span><i class="fa fa-star"></i></span>
+                                                        </div>
+                                                        <div class="post-author">
+                                                            <p><span>admin -</span> 30 Nov, 2018</p>
+                                                        </div>
+                                                        <p>Aliquam fringilla euismod risus ac bibendum. Sed sit amet sem varius ante feugiat lacinia. Nunc ipsum nulla, vulputate ut venenatis vitae, malesuada ut mi. Quisque iaculis, dui congue placerat pretium, augue erat accumsan lacus</p>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <div class="col">
+                                                        <label class="col-form-label"><span class="text-danger">*</span> Your Name</label>
+                                                        <input type="text" class="form-control" required>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <div class="col">
+                                                        <label class="col-form-label"><span class="text-danger">*</span> Your Email</label>
+                                                        <input type="email" class="form-control" required>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <div class="col">
+                                                        <label class="col-form-label"><span class="text-danger">*</span> Your Review</label>
+                                                        <textarea class="form-control" required></textarea>
+                                                        <div class="help-block pt-10"><span class="text-danger">Note:</span> HTML is not translated!</div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <div class="col">
+                                                        <label class="col-form-label"><span class="text-danger">*</span> Rating</label>
+                                                        &nbsp;&nbsp;&nbsp; Bad&nbsp;
+                                                        <input type="radio" value="1" name="rating">
+                                                        &nbsp;
+                                                        <input type="radio" value="2" name="rating">
+                                                        &nbsp;
+                                                        <input type="radio" value="3" name="rating">
+                                                        &nbsp;
+                                                        <input type="radio" value="4" name="rating">
+                                                        &nbsp;
+                                                        <input type="radio" value="5" name="rating" checked>
+                                                        &nbsp;Good
+                                                    </div>
+                                                </div>
+                                                <div class="buttons">
+                                                    <button class="sqr-btn" type="submit">Continue</button>
+                                                </div>
+                                            </form>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+
+<script>
+    var currentUrl = window.location.href;
+    if (currentUrl.includes("&handler=AddToCart")) {
+        var newUrl = currentUrl.replace("&handler=AddToCart", "");
+        window.location.href = newUrl;
+    }
+</script>

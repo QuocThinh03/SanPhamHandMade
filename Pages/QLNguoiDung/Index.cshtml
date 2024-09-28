@@ -1,0 +1,74 @@
+﻿@page
+@model QuocThinh.Pages.QLNguoiDung.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Pages/Shared/_LayoutAdmin.cshtml";
+}
+
+<h1>Quản lý người dùng</h1>
+
+<p>
+    <a asp-page="Create" class="btn btn-primary">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NguoiDung[0].TaiKhoan)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NguoiDung[0].MatKhau)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NguoiDung[0].Ten)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NguoiDung[0].DiaChi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NguoiDung[0].Quyen)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.NguoiDung) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TaiKhoan)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MatKhau)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ten)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DiaChi)
+            </td>
+            <td>
+                @{
+                    var quyen = item.Quyen;
+                    string role = "";
+
+                    if (quyen == 1)
+                    {
+                        role = "admin";
+                    }
+                    else if (quyen == 2)
+                    {
+                        role = "khách";
+                    }
+                }
+                @role
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.ID">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.ID">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.ID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

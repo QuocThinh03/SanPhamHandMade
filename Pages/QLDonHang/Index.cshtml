@@ -1,0 +1,44 @@
+﻿@page
+@model QuocThinh.Pages.QLDonHang.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Pages/Shared/_LayoutAdmin.cshtml";
+}
+
+<h1>Quản lý đơn hàng</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.DonHang[0].Ten)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DonHang[0].NgayDat)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DonHang[0].DiaChi)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.DonHang) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ten)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NgayDat)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DiaChi)
+            </td>
+            <td>
+                <a asp-page="./Details" asp-route-id="@item.ID">Details</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
